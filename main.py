@@ -12,11 +12,16 @@ operator = "+- "
 # Interesting Solution !!!
 # we have 8 o so need 8 nested loop
 # we can make a list with 2 nested loop and
-# use list in 8 nested loop or other...
+# use list in 4 nested loop (2*4 == 8)
 
 two_nested_loop = [(i, j) for i in operator for j in operator]
 print(two_nested_loop)
 
+for j1, j2 in two_nested_loop:
+    for j3, j4 in two_nested_loop:
+        for j5, j6 in two_nested_loop:
+            for j7, j8 in two_nested_loop:
+                pass
 
 
 
