@@ -19,7 +19,11 @@ print("---------------- Smart-Solution ----------------")
 
 
 for j1, j2, j3, j4, j5, j6, j7, j8 in product(operator, repeat=8):
-    pass
+    value = f"1{j1}2{j2}3{j3}4{j4}5{j5}6{j6}7{j7}8{j8}9"
+    # this replace for --> "1 2 + 4" => "12 + 4"
+    value = value.replace(" ", "")
+    if eval(value) == 100:
+        print(f"{value} == 100")
 
 
 print("---------------- Interesting-Solution ----------------")
