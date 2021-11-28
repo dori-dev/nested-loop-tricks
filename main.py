@@ -16,6 +16,9 @@ print("---------------- Smart-Solution ----------------")
 
 # Smart Solution ✔✔✔
 
+for j1, j2, j3, j4, j5, j6, j7, j8 in product(operator, repeat=8):
+    pass
+
 
 print("---------------- Interesting-Solution ----------------")
 
