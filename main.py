@@ -9,3 +9,13 @@ operator[o] = ["+" or "-" or " "]
 
 # we have 8 o so need 8 nested loop...
 operator = "+- "
+
+for j1 in operator:
+    for j2 in operator:
+        for j3 in operator:
+            for j4 in operator:
+                for j5 in operator:
+                    for j6 in operator:
+                        for j7 in operator:
+                            for j8 in operator:
+                                pass
