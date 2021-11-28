@@ -6,3 +6,6 @@ operator[o] = ["+" or "-" or " "]
 " " means nothings(1 " " 2 means 12)
 1 o 2 o 3 o 4 o 5 o 6 o 7 o 8 o 9 = 100 
 """
+
+# we have 8 o so need 8 nested loop...
+operator = "+- "
