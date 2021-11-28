@@ -1,6 +1,6 @@
 # Nested Loop Tricks
 
-Tricks for nested loops in python.
+Any tricks for use nested loops in python.
 
 #
 
