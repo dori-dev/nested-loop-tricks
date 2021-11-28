@@ -9,7 +9,7 @@ operator[o] = ["+" or "-" or " "]
 
 from itertools import product
 
-operator = "+- "
+OPERATOR = "+- "
 
 print("---------------- Smart-Solution ----------------")
 
@@ -18,7 +18,7 @@ print("---------------- Smart-Solution ----------------")
 # We can use itertools.product(iter, repeat=int)
 
 
-for j1, j2, j3, j4, j5, j6, j7, j8 in product(operator, repeat=8):
+for j1, j2, j3, j4, j5, j6, j7, j8 in product(OPERATOR, repeat=8):
     value = f"1{j1}2{j2}3{j3}4{j4}5{j5}6{j6}7{j7}8{j8}9"
     # this replace for --> "1 2 + 4" => "12 + 4"
     value = value.replace(" ", "")
@@ -33,7 +33,7 @@ print("---------------- Interesting-Solution ----------------")
 # we can make a list with 2 nested loop and
 # use list in 4 nested loop (2*4 == 8)
 
-two_nested_loop = [(i, j) for i in operator for j in operator]
+two_nested_loop = [(i, j) for i in OPERATOR for j in OPERATOR]
 
 for j1, j2 in two_nested_loop:
     for j3, j4 in two_nested_loop:
@@ -50,14 +50,14 @@ print("---------------- Bad-Solution ----------------")
 
 # Bad Solution ✖✖✖
 # we have 8 o so need 8 nested loop...
-for j1 in operator:
-    for j2 in operator:
-        for j3 in operator:
-            for j4 in operator:
-                for j5 in operator:
-                    for j6 in operator:
-                        for j7 in operator:
-                            for j8 in operator:
+for j1 in OPERATOR:
+    for j2 in OPERATOR:
+        for j3 in OPERATOR:
+            for j4 in OPERATOR:
+                for j5 in OPERATOR:
+                    for j6 in OPERATOR:
+                        for j7 in OPERATOR:
+                            for j8 in OPERATOR:
                                 value = f"1{j1}2{j2}3{j3}4{j4}5{j5}6{j6}7{j7}8{j8}9"
                                 # this replace for --> "1 2 + 4" => "12 + 4"
                                 value = value.replace(" ", "")
