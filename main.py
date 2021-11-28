@@ -9,21 +9,27 @@ operator[o] = ["+" or "-" or " "]
 
 operator = "+- "
 
+print("---------------- Interesting-Solution ----------------")
+
 # Interesting Solution !!!
 # we have 8 o so need 8 nested loop
 # we can make a list with 2 nested loop and
 # use list in 4 nested loop (2*4 == 8)
 
 two_nested_loop = [(i, j) for i in operator for j in operator]
-print(two_nested_loop)
 
 for j1, j2 in two_nested_loop:
     for j3, j4 in two_nested_loop:
         for j5, j6 in two_nested_loop:
             for j7, j8 in two_nested_loop:
-                pass
+                value = f"1{j1}2{j2}3{j3}4{j4}5{j5}6{j6}7{j7}8{j8}9"
+                # this replace for --> "1 2 + 4" => "12 + 4"
+                value = value.replace(" ", "")
+                if eval(value) == 100:
+                    print(f"{value} == 100")
 
 
+print("---------------- Bad-Solution ----------------")
 
 # Bad Solution ✖✖✖
 # we have 8 o so need 8 nested loop...
