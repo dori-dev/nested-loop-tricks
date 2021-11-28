@@ -11,12 +11,11 @@ from itertools import product
 
 OPERATOR = "+- "
 
-print("---------------- Smart-Solution ----------------")
 
+print("---------------- Smart-Solution ----------------")
 
 # Smart Solution ✔✔✔
 # We can use itertools.product(iter, repeat=int)
-
 
 for j1, j2, j3, j4, j5, j6, j7, j8 in product(OPERATOR, repeat=8):
     value = f"1{j1}2{j2}3{j3}4{j4}5{j5}6{j6}7{j7}8{j8}9"
@@ -50,6 +49,7 @@ print("---------------- Bad-Solution ----------------")
 
 # Bad Solution ✖✖✖
 # we have 8 o so need 8 nested loop...
+
 for j1 in OPERATOR:
     for j2 in OPERATOR:
         for j3 in OPERATOR:
