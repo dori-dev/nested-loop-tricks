@@ -7,7 +7,15 @@ operator[o] = ["+" or "-" or " "]
 1 o 2 o 3 o 4 o 5 o 6 o 7 o 8 o 9 = 100 
 """
 
+from itertools import product
+
 operator = "+- "
+
+print("---------------- Smart-Solution ----------------")
+
+
+# Smart Solution ✔✔✔
+
 
 print("---------------- Interesting-Solution ----------------")
 
