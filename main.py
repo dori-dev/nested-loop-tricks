@@ -18,4 +18,8 @@ for j1 in operator:
                     for j6 in operator:
                         for j7 in operator:
                             for j8 in operator:
-                                pass
+                                value = f"1{j1}2{j2}3{j3}4{j4}5{j5}6{j6}7{j7}8{j8}9"
+                                # 1 2 + 4 => 12 + 4
+                                value = value.replace(" ", "")
+                                if eval(value) == 100:
+                                    print(f"{value} == 100")
