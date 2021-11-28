@@ -10,8 +10,14 @@ operator[o] = ["+" or "-" or " "]
 operator = "+- "
 
 # Interesting Solution !!!
+# we have 8 o so need 8 nested loop
+# we can make a list with 2 nested loop and
+# use list in 8 nested loop or other...
 
-# Code
+two_nested_loop = [(i, j) for i in operator for j in operator]
+print(two_nested_loop)
+
+
 
 
 # Bad Solution ✖✖✖
