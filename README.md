@@ -23,4 +23,4 @@ also we can use `product` function to reduce the nested loops!
 
 Download Source Code: [Click Here](https://github.com/dori-dev/nested-loop-tricks/archive/refs/heads/main.zip)
 
-My Github Acount: [Click Here](https://github.com/dori-dev/)
+My Github Account: [Click Here](https://github.com/dori-dev/)
